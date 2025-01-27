@@ -10,7 +10,7 @@
 \newcommand{\titlevar}{Ein Liebesgedicht}
 \newcommand{\authorvar}{Günthner}
 \newcommand{\datevar}{Winter 2024}
-\title{\vspace{-3cm}\titlevar}
+\title{\titlevar}
 \author{\authorvar}
 \date{\datevar}
 \hypersetup{
@@ -21,75 +21,78 @@
 \setlength{\parindent}{0pt}
 \newcommand{\neueStrophe}{\rule{0pt}{0pt}\\}
 
+\settowidth{\versewidth}{Liegt in ihrer Zweisamkeit foooooooooooo}
+\newenvironment{Strophe}{\begin{minipage}{\versewidth} \begin{verse}[\versewidth]}{\end{verse} \end{minipage}\vspace{0.05cm}}
+
 \begin{document}
 	\maketitle
 	
-	\begin{verse}
+	\begin{Strophe}
 		Was soll ich sagen \\
 		Es bedeutet mir viel \\
 		Dass wir uns haben \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}	
 		Es gibt kein Wort \\
 		Das es beschreibt \\
 		Dieses Gefühl \\
 		Das immer bleibt \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}	
 		Jetzt weiß ich's \\
 		Pass auf! \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}	
 		Zwei Seelen \\
 		Brennen \\
 		Brennen allein \\
 		Fürchten sich sehr \\
 		Finden zusammen \\
 		Fürchten nicht mehr \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}	
 		Vier Sonnen \\
 		Sich gegenüber \\
 		Die sich kennen \\
 		Schon immer \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}	
 		Kannst du ihn hören \\
 		Ihren Gesang \\
 		Sie singen alleine \\
 		Sie singen zusamm' \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}	
 		Aber warum allein? \\
 		Sie sind doch zu zweit? \\
 		Die Antwort darauf \\
 		Liegt in ihrer Zweisamkeit \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}	
 		Sie sind am verschmelzen \\
 		Diese Menschen hier \\
 		Wie gegossen \\
 		In dieselbe Form \\
-	\end{verse}
+	\end{Strophe}
 	
-	\begin{verse}
-		Ich will eins sein \\
-		Mit dir \\
-		Ich will dich \\
-		Ich brauch' dich \\
-	\end{verse}
+	\begin{Strophe}
+		Verschmelzen \\
+		Wie die Sonnen \\
+		Einen Strudel bilden \\
+		Und zu einem Punkt kollabieren \\
+	\end{Strophe}
 	
-	\begin{verse}	
+	\begin{Strophe}
 		Ich liebe dich, Julia \\
 		Für alle Gezeiten \\
 		Ich erwarte mit Freuden \\
 		Unser Jubeljahr \\
-	\end{verse}
+	\end{Strophe}
 \end{document}
